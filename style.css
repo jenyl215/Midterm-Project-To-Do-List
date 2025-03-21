@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    display: grid;
+    height: 100dvh;
+    width: 100%;
+    grid-template-columns: 250px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.first_container {
+    background-image: url("flower.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Originals';
+    src: url('Originals is Out.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.first_container .todo_list h1 {
+    padding-top: 70px;
+    text-align: center;
+    font-family: 'Originals', sans-serif;
+    color: black;
+}
+
+.second_container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.second_container .new_task {
+    background: rgb(255, 243, 228);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.second_container .new_task h2 {
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.second_container .new_task .input_task {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.second_container .new_task .add_task {
+    display: block;
+    margin-top: 10px;
+    height: 23px;
+    background-color: rgb(100, 76, 255);
+    border-color: rgb(100, 76, 255);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    font-size: 14px;
+    color: white;
+}
+
+.second_container .new_task .add_task:hover {
+    background-color: blue;
+    color: white;
+}
+
+.second_container .task_lists {
+    background: rgb(255, 243, 228);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.second_container .task_lists h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.second_container .task_lists .all_tasks {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second_container .task_lists {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.second_container .task_lists .all_tasks div {
+    display: flex; 
+    gap: 5px; 
+}
+
+.second_container .task_lists .all_tasks div p {
+    display: inline-block;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.second_container .task_lists .all_tasks .button button{
+    margin: 0;
+    font-size: 14px;
+    transition-duration: 0.4s;
+} 
+
+.delete {
+    border-radius: 3px;
+    background-color: rgb(252, 69, 69);
+    border-color: red;
+    color: white;
+    display: block;
+}
+
+.delete:hover {
+    background-color: rgb(212, 0, 0);
+    color: white;
+}
+
+i {
+    padding-left: 5px;
+}
+
+.second_container .task_lists .done {
+    padding-bottom: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.second_container .completed_tasks {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.second_container .completed_tasks p{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0;
+    height: 30px;
+    padding: 5px;
+    text-decoration: line-through;
+}
+
+
+
+
+

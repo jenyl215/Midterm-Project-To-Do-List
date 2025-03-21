@@ -1,0 +1,10 @@
+CREATE DATABASE todo_list;
+
+USE todo_list;
+
+CREATE TABLE tasks (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ task_name VARCHAR(255) NOT NULL,
+ is_completed TINYINT(1) DEFAULT 0,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
